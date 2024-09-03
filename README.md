@@ -21,7 +21,9 @@ In order to implement this anonymized chat concept in your own Discord Server, f
 3. Fork the Git Repo and clone it. 
 4. install the requirements.txt `pip install -r requirements.txt`. 
 5. Paste your token within the parentheses of `client.run()` in the `main.py`.
-6. Modify and edit the code to your liking and use case :D.
+6. Modify and edit the code to your liking and use case 😊.
 7. *Note that the code is dependent on specific roles on the sever (`Admin`), so please change them.*
 # Vision 
-My vision for this project is to turn this concept into a network of decentralized anonymized message boards. That is why you can make your own instance of this bot for your own server. In short, my advice is to only use one instance per server, any more and tranparency will be lost and monopolies will emerge. 
+My vision for this project is to turn this concept into a network of decentralized anonymized message boards. That is why you can make your own instance of this bot for your own server. In short, my advice is to only use one instance per server, any more and tranparency will be lost, groups will form, and monopolies will emerge.
+
+*Remember to always make sure it is open source* 😊
