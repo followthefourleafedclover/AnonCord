@@ -1,0 +1,30 @@
+#smallest least reasource intensive anonymous chat
+import discord 
+from discord.ext import commands 
+from discord.utils import get 
+import asyncio 
+
+def run():
+  client = commands.Bot(command_prefix="/", intents=discord.Intents.all()) 
+
+  @client.event
+  async def on_ready():
+    print("ready")
+    await client.tree.sync()
+
+
+  @client.listen('on_message')
+  async def remove_normal_msgs(message):
+    pass
+      
+
+  @client.tree.command(name="s", description="send messages anonymously") # uses hashing to create and persist user id 
+  async def slash(interaction: discord.Interaction, message: str):
+    await interaction.response.send_message(content="Done ✅ ", ephemeral=True, delete_after=0.01)
+    await interaction.channel.send((f"**{hash(interaction.user)}** : {message}"))
+
+
+  client.run() # Your discord bot token
+
+
+run()
